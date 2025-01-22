@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Chivo", sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            width: 80%;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 6rem;
+            font-weight: 900;
+            text-align: left;
+        }
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: lightgray;
+            text-align: left;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+        .circle {
+            width: 70px;
+            height: 70px;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .circle:hover {
+            transform: scale(1.1);
+            background-color: lightgray;
+            color:red;
+            transition: 0.5s color;
+        }
+        .circle.color-lh { background-color: #5bc0de; }
+        .circle.color-iva { background-color: #5cb85c; }
+        .circle.color-hc { background-color: #d9534f; }
+        .circle.color-ic { background-color: #f0ad4e; }
+        .circle.color-sic { background-color: #337ab7; }
+        .circle.color-di { background-color: #f47cc2; }
+        .circle.color-p1 { background-color: #ffcc00; }
+        .circle.color-fb { background-color: #5bc0de; }
+        .circle.color-fd { background-color: #e83e8c; } 
+        .circle.color-fb0 { background-color: #ff5555; } 
+        .circle.color-fc { background-color: #ff5555; }
+        .circle.color-cm { background-color: #337ab7; }
+        .circle.color-g { background-color: #ff9933; }
+        .circle.color-gc { background-color: #5cb85c; }
+        .circle.color-pc { background-color: #85c1e9; }
+        .vertical-text { 
+                writing-mode: vertical-rl; 
+                transform: rotate(180deg); 
+                font-size: 2rem; 
+                font-weight: 900; 
+                text-transform: uppercase; 
+                color: lightgray; 
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                position: absolute;
+                right: 30px; 
+                top: 50%; 
+                transform: translateY(-50%) rotate(180deg); 
+                grid-row: span 4; 
+            }
+
+            @media only screen and (max-width: 600px) {
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .vertical-text {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+    }
+    .circle a {
+        color: black; 
+    }
+    .circle {
+        color: black; 
+        background-color: white; 
+    }
+    .circle:hover {
+        background-color: lightgray;
+        color: black;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Porfolio</h1>
+            <h2>Sistemas de representación 2024/2025</h2>
+        </header>
+        <div class="grid">
+            <div class="circle color-lh">
+                <a href=https://emmapeinado12.github.io/2DG_p1/ target="_blank">LH</a>
+            </div>
+            <div class="circle color-iva">
+                <a href=https://emmapeinado12.github.io/2DG_p2/ target="_blank">IVA</a>
+            </div>
+            <div class="circle color-hc">
+                <a href=https://emmapeinado12.github.io/2DG_p3/ target="_blank">HC</a>
+            </div>
+            <div class="circle color-ic">
+                <a href= https://emmapeinado12.github.io/2DG_p4/ target="_blank">IC</a>
+            </div>
+            <div class="circle color-sic">
+                <a href=https://www.figma.com/design/b7ZwyHsgJuFqzQlQGFGmZK/p3?node-id=13-3&t=c4ciA19qz2VKoVgB-1 target="_blank">SIC</a> 
+            </div>
+            <div class="vertical-text">
+                <a href="https://www.instagram.com/emma_pg12?igsh=a2pwcmQ5OHk2OHdx" target="_blank">EMMA PEINADO</a>
+            </div>
+            <div class="circle color-di">
+                <a href= https://emmapeinado12.github.io/p6/ target="_blank">DI</a>
+            </div>
+            <div class="circle color-p1">
+                <a href=  https://emmapeinado12.github.io/2DG_p7/ target="_blank">P1</a>
+            </div>
+            <div class="circle color-fb">
+                 <a href="https://emmapeinado12.github.io/p8/" target="_blank">FB</a>
+                </div>
+            <div class="circle color-fd">
+                <a href="https://www.backmarket.es/es-es?gclid=&msclkid=6b93790a235010ccf10a1e15a662811d&utm_source=bing&utm_medium=cpc&utm_campaign=ES_SA_SEARCH_M_BRA&utm_term=back+market&utm_content=Back+market+(exact)" target="_blank">FD</a>
+            </div>
+            <div class="circle color-fb0">
+               <a href="https://www.figma.com/design/b7ZwyHsgJuFqzQlQGFGmZK/p3?node-id=0-1&p=f&t=XXTJ9CuE8HpRDdoG-0" target="_blank">FBO</a>
+            </div>
+            <div class="circle color-fc">
+                <a href="https://www.figma.com/design/b7ZwyHsgJuFqzQlQGFGmZK/p3?node-id=0-1&p=f&t=XXTJ9CuE8HpRDdoG-0" target="_blank">FC</a>
+            </div>
+            <div class="circle color-cm">
+                <a href="https://emmapeinado12.github.io/p12_card_mediaqueries/" target="_blank">CM</a>
+            </div>
+            <div class="circle color-g">
+                <a href="https://emmapeinado12.github.io/p13_grid_objecte/" target="_blank">G</a></div>
+            <div class="circle color-gc"> 
+                <a href="https://emmapeinado12.github.io/p14_maig_25/" target="_blank">GC</a>
+            </div>
+            <div class="circle color-pc">
+                <a href=" https://emmapeinado12.github.io/Calendari_2025/" target="_blank">PC</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+</html>
